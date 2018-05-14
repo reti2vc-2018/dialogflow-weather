@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>WeatherAgent</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-root">
+
+    <div class="container">
+      <ol class="chat">
+      </ol>
+    </div>
+
+    <div class="container">
+      <div class="json-response">
+        <h3>JSON Response</h3>
+          <textarea id="response" cols=65 rows=35></textarea>
+      </div>
+    </div>
+
+    <input id="speech" class="textarea" type="text" placeholder="Type here!"/>
+    <button id="rec" class="btn"><i class="fa fa-microphone fa-lg" aria-hidden="true"></i></button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="converse.js"></script>
+</body>
+</html>

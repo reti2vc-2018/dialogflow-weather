@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+html, body, input.textarea {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #777;
+  margin: 0px auto;
+}
+
+.container-root {
+  display: flex;
+  align-items: flex-start;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat {
+  list-style: none;
+  background: none;
+  margin: 0;
+  padding: 0 0 50px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.chat li {
+  padding: 0.5rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.self .msg {
+  border-top-left-radius: 0px;
+}
+
+.self:before {
+  content: "";
+  position: relative;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  border: 5px solid rgba(0, 0, 0, .04);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.other {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.other .msg {
+  background: #208bf5;
+  border-bottom-right-radius: 0px;
+}
+
+.other .msg p {
+  color: #fff;
+}
+
+.other:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  border: 5px solid #208bf5;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.msg {
+  background: rgba(0, 0, 0, .03);
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.msg p {
+  font-size: 0.9rem;
+  margin: 0 0 0.2rem 0;
+  color: #777;
+}
+
+.json-response {
+  position: fixed;
+  margin-left: 20px;
+}
+
+input.textarea {
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 90%;
+  height: 50px;
+  z-index: 99;
+  outline: none;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+#rec {
+  position: fixed;
+  display: inline-block;
+  bottom: 8px;
+  right: 25px;
+  width: 35px;
+  height: 40px;
+  z-index: 100;
+  cursor: pointer;
+  background-color: lightgray;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
