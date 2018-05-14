@@ -4,7 +4,7 @@
   Tested in Chrome 57+ and Safari 10.1+. Please, notice that speech-to-text capability does not work in Safari.
 */
 var accessToken = "80799ecb18fd425fb6f3bab4ed367cca",
-  baseUrl = "https://dialogflow.com/v1/",
+  baseUrl = "https://api.dialogflow.com/v1/",
   $speechInput,
   $recBtn,
   recognition,
@@ -99,7 +99,7 @@ function send() {
   var text = $speechInput.val();
   $.ajax({
     type: "POST",
-    url: baseUrl + "query?v=20150910",
+    url: baseUrl + "query?v=20170712",
     contentType: "application/json; charset=utf-8",
     dataType: "json",
     headers: {
